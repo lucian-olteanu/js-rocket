@@ -7,7 +7,7 @@ hello js rocket
 
 	var car = {
 		make:'vW',
-		type:'Polo',
+		type:'Bora',
 		color:'blue',
 		isTurnedOn: false,
 		numberOfWheels:4,
@@ -17,20 +17,19 @@ hello js rocket
 			   'seat 4'
 			   ],
 
-		isTurnedOn: function () {
+		turnOn: function () {
 			this.isTurnedOn = true;
-
 		},
+
 		fly: function(){
 			alert('fly');
 		},
 		switchCar: function (isON) {
-			console.log('turn car '+isOn)
-			;
-			if (isOn==true) {
-				this.isTurnedOn=true;
-			}else{
-				this.isTurnedOn=false;
+			console.log('turn car '+isOn);
+			if (isOn == true) {
+				this.isTurnedOn = true;
+			} else {
+				this.isTurnedOn = false;
 			}
 		}
 	};
