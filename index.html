@@ -15,10 +15,27 @@ hello js rocket
 			   'seat 2',
 			   'seat 3',
 			   'seat 4'
-			   ]
+			   ],
+
+		isTurnedOn: function () {
+			this.isTurnedOn = true;
+
+		},
+		fly: function(){
+			alert('fly');
+		},
+		switchCar: function (isON) {
+			console.log('turn car '+isOn)
+			;
+			if (isOn==true) {
+				this.isTurnedOn=true;
+			}else{
+				this.isTurnedOn=false;
+			}
+		}
 	};
 
-	console.log('hello the re friends!');
+	console.log('hello there friends!');
 	</script> 
 </head>
 
